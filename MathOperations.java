@@ -8,16 +8,34 @@
 public class MathOperations
 {
     public static void main(String[] argus ){
-        int a=15;
-        int b=3;
-        
-        //arithematic operator
-        int add=a+b;
-        int sub=a-b;
-        int prod=a*b;
-        int div=a/b;
-        
-        //output
-        System.out.println("Addition="+add+"Subtraction="+sub+"Product="+prod+"Division"+
+        //Arithmetic operator
+        int a = 10, b = 5;
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+// Unary operator
+        int x = 5;
+        System.out.println(x++); 
+        System.out.println(++x);
+
+// Assignment operator
+        int num = 20;
+        num += 5;
+        System.out.println(num);
+
+// Relational operator
+        System.out.println(a > b);
+        System.out.println(a == b);
+
+// Logical operator
+        boolean p = true, q = false;
+        System.out.println(p && q);
+        System.out.println(p || q);
+
+// Ternary operator
+        int marks = 60;
+        String result = (marks >= 50) ? "Pass" : "Fail";
+        System.out.println(result);
     }
 }
