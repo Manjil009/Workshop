@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Data_Type_Inspector
+public class Data_Type_Inspector 
 {
     
     public static void main(String[] args) {
