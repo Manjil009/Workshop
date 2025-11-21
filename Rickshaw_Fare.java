@@ -44,9 +44,30 @@ public class Rickshaw_Fare
                 System.out.println("Local="+local);
                 System.out.println("\n=======================================================");
                 System.out.println("The FINAL FARE is="+totaldisplay);
+                System.out.println("=========================================================");}
+                else if(y.equalsIgnoreCase("N"))
+                {
+                    //for day time
+                    double N=1.00;
+                double basefare=49.5;
+                double ratepkm=20.5;
+                double ratepmin=5.5;
+                double disCharge=Math.max(0,distance-1)*ratepkm; 
+                double timeCharge=Math.max(0,time-1)*ratepmin;
+                double ufare=basefare+disCharge+timeCharge;
+                double total=ufare*local*N;
+                String ufaredisplay=String.format("Rs:%.2f",ufare);
+                String totaldisplay=String.format("Rs:%.2f",total);
+                System.out.println("\n------Fare Details------");
+                System.out.println("Initially Fare Calculated="+ufaredisplay);
+                System.out.println("Night="+N);
+                System.out.println("Local="+local);
+                System.out.println("\n=======================================================");
+                System.out.println("The FINAL FARE is="+totaldisplay);
                 System.out.println("=========================================================");
-                
             }
+            else if(YN.equalsIgnoreCase("N"))
+            System.out.println("You will be charged according to drivers will");
             
         }
         scanner.close();
